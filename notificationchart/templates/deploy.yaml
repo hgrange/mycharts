@@ -63,21 +63,6 @@ spec:
               secretKeyRef:
                 name: mq   
                 key: queue
-          - name: OW_URL
-            valueFrom:
-              secretKeyRef:
-                name: openwhisk
-                key: url
-          - name: OW_ID
-            valueFrom:
-              secretKeyRef:
-                name: openwhisk
-                key: id
-          - name: OW_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: openwhisk   
-                key: pwd
         ports:
           - containerPort: 9080
         imagePullPolicy: Always
